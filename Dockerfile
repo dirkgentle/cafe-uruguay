@@ -8,6 +8,7 @@ WORKDIR /cafe_uruguay
 COPY pyproject.toml .
 COPY poetry.lock .
 COPY cafe_uruguay ./cafe_uruguay
+COPY README.md .
 
 RUN poetry install --without=dev
 
