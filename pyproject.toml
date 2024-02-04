@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "cafe-uruguay"
+version = "0.1.0"
+description = ""
+authors = ["DirkGentle"]
+license = "AGPL3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+praw = "^7.7.1"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.21.0"
+black = "^24.1.1"
+flake8 = "^7.0.0"
+ipdb = "^0.13.13"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
