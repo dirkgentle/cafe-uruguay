@@ -11,4 +11,4 @@ COPY cafe_uruguay ./cafe_uruguay
 
 RUN poetry install --without=dev
 
-CMD ["poetry", "run", "python", "cafe_uruguay/bot.py"]
+CMD ["poetry", "run", "python", "cafe_uruguay/main.py"]
