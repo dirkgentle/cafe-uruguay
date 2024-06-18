@@ -1,7 +1,8 @@
-FROM python:3.11.3
+FROM python:3.11-alpine
 
 ENV TZ=America/Montevideo
 
+RUN apk add build-base gcc musl-dev python3-dev libffi-dev openssl-dev cargo pkgconfig
 RUN pip install poetry
 
 WORKDIR /cafe_uruguay
